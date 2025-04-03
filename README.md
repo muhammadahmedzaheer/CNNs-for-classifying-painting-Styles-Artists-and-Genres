@@ -76,20 +76,24 @@ Outlier detection is used to identify artworks that do not fit the expected arti
 
 Outliers are identified based on the following criteria:
 
-Softmax Confidence Threshold: If the confidence score for the predicted class is lower than a predefined threshold (e.g., 0.6), it may indicate that the model is unsure about the classification, making the sample an outlier.
-Incorrect Classifications: If the predicted class doesn't match the actual label and the confidence is low, the sample is considered an outlier.
+    Softmax Confidence Threshold: If the confidence score for the predicted class is lower than a predefined threshold (e.g., 0.6), it may indicate that the model is unsure about the classification, making the sample an outlier.
+    
+    Incorrect Classifications: If the predicted class doesn't match the actual label and the confidence is low, the sample is considered an outlier.
 
 ### Impact of Epochs on Accuracy and Outliers:
 
-Since the model was only trained for 2 epochs, the accuracy is relatively low (about 33.28%) and there are many outliers identified. This is expected because the model hasn't had enough time to learn the complex patterns in the dataset.
-Training for more epochs would allow the model to learn better feature representations, likely improving the accuracy and reducing the number of outliers. The more epochs the model is trained, the more robust the predictions will become.
+    Since the model was only trained for 2 epochs, the accuracy is relatively low (about 33.28%) and there are many outliers identified. This is expected because the model hasn't had enough time to learn the complex patterns in the dataset.
+    
+    Training for more epochs would allow the model to learn better feature representations, likely improving the accuracy and reducing the number of outliers. The more epochs the model is trained, the more robust the predictions will become.
 
 ## Conclusion
 
 This project demonstrates how convolutional-recurrent models can be applied to the classification of artwork from different genres and artists. The implementation includes:
 
-Data preprocessing and augmentation.
-A convolutional-recurrent architecture combining ResNet-50 and LSTM.
-Evaluation using accuracy and outlier detection.
+    Data preprocessing and augmentation.
+    
+    A convolutional-recurrent architecture combining ResNet-50 and LSTM.
+    
+    Evaluation using accuracy and outlier detection.
 
 By increasing the training epochs, the model's performance can be improved, leading to higher accuracy and fewer outliers.
