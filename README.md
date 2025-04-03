@@ -43,7 +43,23 @@ The dataset used for training is the **ArtGAN dataset**, which can be downloaded
 
 ### 1. Install Dependencies:
 To run the scripts, first install the required Python libraries:
-
 ```bash
 pip install -r requirements.txt
 ```
+
+### 2. Train the Model
+To train the model, simply run the following script:
+```bash
+python train_model.py
+```
+This will begin the training process, saving the model's weights after each epoch. You can adjust the number of epochs in the script if you wish to train the model for more epochs.
+
+### 3. Test the Model
+Once the model is trained, you can evaluate its performance on the test set by running the following script:
+```bash
+python test_model.py
+```
+This will load the best model and output the test accuracy.
+
+## Evaluation Metrics
+*Accuracy*: The primary evaluation metric used to assess the model's performance on the test set.
