@@ -62,4 +62,4 @@ python test_model.py
 This will load the best model and output the test accuracy.
 
 ## Evaluation Metrics
-*Accuracy*: The primary evaluation metric used to assess the model's performance on the test set.
+**Accuracy**: The primary evaluation metric used to assess the model's performance on the test set.
